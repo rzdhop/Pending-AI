@@ -1,7 +1,6 @@
 #Coding: UTF-8
 #Gradiant descent
 import numpy as np
-from math import tanh
 
 class neurone():
     def __init__(self, inputs):
@@ -16,7 +15,7 @@ class neurone():
     def guess(self):
         self.actualOutput = self.activationFunction(np.dot(self.input.T, self.weight.T))
     def activationFunction(self, output):
-        return output #tanh() for tangeante hyperbolique
+        return output # (1-np.exp(-2*output)) // (1 + np.exp(-2*output) ## tangeate hyperbolique function 
     def Improve(self):
         for weight in self.weight:
             for input in self.input:
