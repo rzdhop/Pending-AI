@@ -31,4 +31,4 @@ if __name__ == "__main__":
         myNeurone.error = goal - myNeurone.actualOutput
         myNeurone.Improve()
         
-    print(chr(0xa), "final output :", myNeurone.actualOutput, chr(0xa), "final weight :", myNeurone.weight, chr(0xa), "final error :", myNeurone.error, chr(0xa))
+    print(chr(0xa), "final output :", myNeurone.actualOutput, chr(0xa), "final weight :", myNeurone.weight, chr(0xa), "final error :", myNeurone.error, chr(0xa), "This AI was made by IchInose", chr(0xa))
